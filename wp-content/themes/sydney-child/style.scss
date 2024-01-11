@@ -1,0 +1,657 @@
+/*
+ Theme Name:   Helemaal de bom theme
+ Theme URI:    https://www.helemaaldebom.nl/
+ Description:  Helemaal de bom child theme
+ Author:       Bas Romeijn
+ Author URI:   https://www.helemaaldebom.nl/
+ Template:     sydney
+ Version:      1.0.0
+ Tags:         plaats, hier, jouw, tags, gescheiden, door, kommas
+ Text Domain:  sydney-child
+*/
+
+/* =Eigen CSS hier beneden plaatsen
+-------------------------------------------------------------- */
+
+$mainFont : 'Open Sans', sans-serif;
+$mainColor: #F36421;
+
+.slider-home {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.slider-home-inhoud {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 110px 30px 140px;
+}
+
+.titel-slider {
+    color: white;
+    text-transform: uppercase;
+    font-family: $mainFont;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-bottom: 75px;
+}
+
+.sliderHome-dikgedrukt {
+    font-weight: 800 !important;
+}
+
+.en-home {
+    margin: 0px 10px;
+}
+
+.buttonSliderHome {
+    color: white;
+    padding: 20px 35px 25px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-family: $mainFont;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.buttonSliderHome:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px)  {
+    .titel-slider {
+        font-size: 24px;
+        margin-bottom: 45px;
+    }
+
+    .buttonSliderHome {
+        padding: 18px 25px 18px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .titel-slider {
+        font-size: 15px;
+        margin-bottom: 45px;
+    }
+
+    .buttonSliderHome {
+        padding: 10px 18px 11px;
+        font-size: 12px;
+    }
+
+    .slider-home-inhoud {
+        padding: 60px 20px 80px;
+    }
+}
+
+.informatie-home-inhoud {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.titelInfo-home {
+    color: #000;
+    font-family: $mainFont;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.oranjeTekst {
+    color: $mainColor;
+    margin-right: 10px;
+}
+
+.informatie-home-tekst p {
+    color: #000;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.informatie-home-c1 {
+    padding: 50px 30px;
+    background: #f1f1f1;
+}
+
+.afbeeldingInfo-home {
+    max-width: 350px; width: 350px;
+}
+
+@media only screen and (max-width: 900px) {
+    .informatie-home-inhoud {
+        flex-direction: column;
+    }
+
+    .informatie-home-c2 {
+        margin-top: 50px;
+        width: 100%;
+        text-align: right;
+    }
+
+    .titelInfo-home {
+        font-size: 28px;
+    }
+
+    .informatie-home-tekst p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .afbeeldingInfo-home {
+        width: 100%;
+    }
+}
+
+.machines-home-inhoud {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 30px;
+    display: flex;
+    gap: 2%;
+}
+
+.div-rep {
+    display: flex;
+}
+
+.div-rep p:nth-child(2) {
+    margin: 0px 5px;
+    font-weight: 700;
+}
+
+.div-rep span {
+    margin-left: 5px;
+}
+
+.column-rep {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    margin-top: 20px;
+}
+
+.grijsVlak {
+    background-color: #F1F1F1;
+    padding: 30px 20px 20px 20px;
+}
+
+.afbeelding-machine-rep {
+    padding: 0px 30px;
+    position: relative;
+    top: 30px;
+}
+
+.naamMachine-rep {
+    color: #000;
+    font-family: $mainFont;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.div-rep p {
+    color: #000;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.fa-long-arrow-right {
+    position: relative;
+    bottom: 2px;
+    right: 10px;
+    color: $mainColor;
+    font-size: 26px;
+}
+
+.titel-alleMachines, .divButton-alleMachines {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.titelAlleMachines {
+    margin-bottom: 10px;
+    color: #000;
+    font-family: $mainFont;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.oranjeLijn {
+    height: 3px;
+    border: 0;
+    background-color: $mainColor;
+    margin-left: 5px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.button-alleMachines {
+    color: #FFF;
+    font-family: $mainFont;
+    background-color: $mainColor;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    border-radius: 20px;
+    border: 3px solid $mainColor;
+}
+
+.button-alleMachines:hover {
+    background: transparent;
+    color: $mainColor;
+    text-decoration: underline;
+}
+
+.divButton-alleMachines {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 600px)  {
+    .machines-home-inhoud {
+        flex-wrap: wrap;
+    }
+
+    .machines-home-inhoud a {
+        flex: 48%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .machines-home-inhoud {
+        flex-wrap: wrap;
+    }
+
+    .machines-home-inhoud a {
+        flex: 98%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .titelAlleMachines {
+        font-size: 28px;
+    }
+}
+
+.costum-footer, .costumCredit-footer {
+    background: #57585A;
+}
+
+.costum-footer-inhoud {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titelFooter {
+    color: #FFF;
+    font-family: $mainFont;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.menuItemLinkFooter {
+    display: block;
+    color: #FFF;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.menuItemLinkFooter:hover {
+    color: $mainColor;
+}
+
+.logo-footer {
+    width: 250px;
+    max-width: 250px;
+}
+
+.facebookLink {
+    display: block;
+    margin-top: 20px;
+    font-size: 26px;
+    color: white;
+    background-color: $mainColor;
+    border-radius: 50%;
+    max-width: 45px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid $mainColor;
+}
+
+.facebookLink:hover {
+    background-color: transparent;
+    color: $mainColor;
+}
+
+.fa-facebook {
+    position:relative;
+    right: 2px;
+}
+
+.footer-kolom-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-footer-k3 p {
+    color: #FFF;
+    font-family: $mainFont;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.linkFooter-k3 {
+    display: block;
+    color: #FFF;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.linkFooter-k3:hover  {
+    color: $mainColor;
+}
+
+.costumCredit-footer-inhoud {
+    max-width: 1530px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    border-top: 1px solid grey;
+}
+
+.sydney-credits {
+    color: white;
+    font-family: $mainFont;
+    font-size: 12px;
+}
+
+.sydney-credits a {
+    color: white;
+}
+
+.sydney-credits a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+@media only screen and (max-width: 950px) {
+    .costum-footer-inhoud {
+        flex-direction: column;
+    }
+
+    .footer-kolom-2 {
+        display: unset;
+        margin: 50px 0px;
+    }
+
+    .logo-footer {
+        position: relative;
+        right: 25px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .costumCredit-footer-inhoud {
+        max-width: 1600px;
+        padding: 10px 30px;
+    }
+}
+
+/* Header */
+
+#mainnav .nav-menu > li > a {
+    color: #FFF;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+#mainnav .nav-menu > li > a:hover {
+    color: $mainColor !important;
+}
+
+.current_page_item a {
+    color: $mainColor !important;
+    text-decoration: unset !important;
+}
+
+.roll-button {
+    background-color: $mainColor !important;
+    border: 1px solid $mainColor !important;
+    font-family: $mainFont !important;
+    border-radius: 10px !important;
+}
+
+.roll-button:hover {
+    background: transparent !important;
+    color: $mainColor !important;
+}
+
+.container {
+    width: 100% !important;
+    max-width: 1600px !important;
+}
+
+@media only screen and (min-width: 1050px) {
+    .machines-home-inhoud a {
+        flex: 23%;
+        max-width: 315px;
+    }
+
+    .machines-home-inhoud {
+        flex-wrap: wrap;
+    }
+}
+
+.aanbod {
+    margin: 80px 0px;
+}
+
+.slider-aanbod {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.slider-aanbod-inhoud {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.titel-aanbod {
+    padding: 50px 30px;
+    margin: 0px;
+    color: white;
+    text-transform: uppercase;
+    font-family: $mainFont;
+}
+
+@media only screen and (max-width: 600px) {
+    .titel-aanbod {
+        padding: 30px 10px;
+    }
+
+    .slider-aanbod-inhoud {
+        padding: 30px;
+    }
+}
+
+.contact-inhoud {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 30px;
+    display: flex; 
+    gap: 5%;
+    justify-content: space-between;
+}
+
+.titel-contact {
+    color: #000;
+    font-family: $mainFont;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.informatie-contact p {
+    color: #000;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.linkContact {
+    display: block;
+    color: #000;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.meerInfo-contact p {
+    margin-top: 40px;
+    font-family: $mainFont;
+}
+
+.meerInfo-contact p strong {
+    font-weight: 700 !important;
+}
+
+.meerInfo-contact li {
+    font-family: $mainFont;
+    font-weight: 600;
+}
+
+.meerInfo-contact a {
+    color: $mainColor;
+}
+
+.meerInfo-contact ul {
+    margin-bottom: 40px;
+}
+
+.contact-form label {
+    font-family: $mainFont;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.contact-form .wpcf7-text {
+    height: 40px !important;
+    border: 0px !important;
+    border-radius: 10px !important;
+    background-color: #EAEAEA !important;
+}
+
+.contact-form textarea {
+    border: 0px !important;
+    border-radius: 10px !important;
+    background-color: #EAEAEA !important;
+}
+
+.wpcf7-submit {
+    background-color: $mainColor !important;
+    border: 1px solid $mainColor !important;
+    font-family: $mainFont !important;
+    font-family: $mainFont !important;
+    padding: 12px 24px !important;
+    border-radius: 10px !important;
+}
+
+.wpcf7-submit:hover {
+    background-color: transparent !important;
+    color: $mainColor !important;
+}
+
+.googleMaps iframe {
+    height: 750px;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact-inhoud {
+        flex-direction: column;
+    }
+    .googleMaps iframe {
+        height: 250px;
+    }
+
+    .contact-form label, .contact-form input {
+        width: 100% !important;
+    }
+
+    .contact-c1 {
+        margin-bottom: 50px;
+    }
+}
